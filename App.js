@@ -24,7 +24,7 @@ export default class App extends React.Component {
     let persistor = persistStore(Store)
     return (
       <Provider store={Store}>
-        <PersistGate persistor={persistor}></PersistGate>
+        <PersistGate persistor={persistor}>
         <NavigationContainer>
           <Tab.Navigator options={{
             animationEnabled: true
